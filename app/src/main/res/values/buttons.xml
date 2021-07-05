@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CoreButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/spacing_huge</item>
+        <item name="android:paddingBottom">@dimen/spacing_x</item>
+        <item name="android:paddingTop">@dimen/spacing_x</item>
+        <item name="android:paddingRight">@dimen/spacing_huge</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/minimum_height_button</item>
+    </style>
+
+    <style name="NoteButton" parent="CoreButton">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="LightNavyButton" parent="NoteButton">
+        <item name="android:background">@drawable/selector_ripple_light_navy_button</item>
+        <item name="android:textColor">@color/selector_light_navy_button</item>
+    </style>
+
+    <style name="CoralOutlinedButton" parent="NoteButton">
+        <item name="android:background">@drawable/selector_ripple_coral_outlined_button</item>
+        <item name="android:textColor">@color/selector_coral_outlined_button</item>
+    </style>
+
+</resources>
